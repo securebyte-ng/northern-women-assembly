@@ -1,4 +1,3 @@
-
 /* NORTHERN WOMEN ASSEMBLY - PROFESSIONAL WEBSITE DESIGN */
 
 :root {
@@ -173,5 +172,71 @@ select {
   .card,
   article {
     padding: 18px;
+  }
+}
+
+/* CEO Leadership Profile */
+#leadership {
+  padding: 60px 20px;
+  background: #f4f7fb;
+}
+
+#leadership h2 {
+  text-align: center;
+  color: #123b70;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.leader-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(18, 59, 112, 0.12);
+  border-left: 5px solid #e7b44a;
+}
+
+.leader-card img {
+  display: block;
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.leader-info h3 {
+  color: #123b70;
+  font-size: 1.7rem;
+  margin: 0 0 10px;
+}
+
+.leader-title {
+  color: #167d8d;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.leader-info p {
+  line-height: 1.7;
+  color: #263449;
+}
+
+@media (max-width: 600px) {
+  .leader-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leader-card img {
+    width: 100%;
+    max-width: 260px;
+    height: 300px;
   }
 }
