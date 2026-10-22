@@ -240,3 +240,16 @@ select {
     height: 300px;
   }
 }
+
+/* CEO profile image */
+.leader-card img {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
