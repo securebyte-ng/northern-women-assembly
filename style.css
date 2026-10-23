@@ -1590,3 +1590,232 @@ button {
     font-size: 14px;
   }
 }
+/* =========================================
+   NWA PROFESSIONAL WEBSITE ENHANCEMENTS
+   Northern Women Assembly
+   ========================================= */
+
+:root {
+  --nwa-green: #075b37;
+  --nwa-green-light: #13804a;
+  --nwa-gold: #d6ad3d;
+  --nwa-white: #ffffff;
+  --nwa-bg: #f5f9f7;
+  --nwa-text: #26352e;
+  --nwa-muted: #65736b;
+  --nwa-shadow: 0 12px 35px rgba(7, 91, 55, 0.10);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+/* General text improvements */
+body {
+  color: var(--nwa-text);
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+/* Navigation */
+nav a {
+  transition: color 0.25s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--nwa-green-light);
+}
+
+/* Section headings */
+section h2 {
+  position: relative;
+}
+
+.section-tag {
+  color: var(--nwa-green-light);
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Consistent section spacing */
+section {
+  scroll-margin-top: 90px;
+}
+
+/* Buttons */
+.btn,
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+              background-color 0.2s ease;
+}
+
+.btn:hover,
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(7, 91, 55, 0.18);
+}
+
+/* Cards */
+.stat-card,
+.contact-item,
+article,
+.about-content {
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.stat-card:hover,
+.contact-item:hover,
+article:hover {
+  box-shadow: var(--nwa-shadow);
+}
+
+/* Statistics */
+.stat-card h3 {
+  color: var(--nwa-green);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+}
+
+/* About section */
+.about-section {
+  background: var(--nwa-bg);
+}
+
+.about-content h3 {
+  color: var(--nwa-green);
+}
+
+.about-content li::marker {
+  color: var(--nwa-gold);
+}
+
+/* Leadership */
+.leader-info h2 {
+  color: var(--nwa-green);
+}
+
+.leader-role {
+  color: var(--nwa-green-light);
+  font-weight: 700;
+}
+
+.leader-quote,
+.nwa-quote {
+  border-left: 4px solid var(--nwa-gold);
+  padding: 18px 22px;
+  background: #edf5ef;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+}
+
+.leader-photo img,
+.gallery img {
+  transition: transform 0.35s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.025);
+}
+
+/* Social media links */
+.nwa-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.nwa-social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 115px;
+  padding: 12px 18px;
+  border: 1px solid rgba(7, 91, 55, 0.16);
+  border-radius: 30px;
+  background: var(--nwa-white);
+  color: var(--nwa-green);
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.nwa-social-links a:hover {
+  background: var(--nwa-green);
+  color: var(--nwa-white);
+  transform: translateY(-3px);
+}
+
+/* Contact section */
+.contact-note {
+  color: var(--nwa-muted);
+}
+
+/* Keyboard accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--nwa-gold);
+  outline-offset: 4px;
+}
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .about-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .nwa-social-links {
+    gap: 9px;
+  }
+
+  .nwa-social-links a {
+    min-width: 0;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nwa-social-links a {
+    flex: 1 1 40%;
+  }
+}
