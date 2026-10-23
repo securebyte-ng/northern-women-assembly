@@ -1555,3 +1555,38 @@ button {
     padding: 18px;
   }
 }
+/* NWA Social Media Links */
+.nwa-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 25px 0;
+}
+
+.nwa-social-links a {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #075b37;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.nwa-social-links a:hover {
+  background: #13804a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .nwa-social-links {
+    gap: 8px;
+  }
+
+  .nwa-social-links a {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+}
