@@ -1769,56 +1769,6 @@ img {
 .contact-note {
   color: var(--nwa-muted);
 }
-
-/* Keyboard accessibility */
-a:focus-visible,
-button:focus-visible {
-  outline: 3px solid var(--nwa-gold);
-  outline-offset: 4px;
-}
-
-/* Respect reduced-motion settings */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* Mobile layout */
-@media (max-width: 768px) {
-  section {
-    padding-top: 45px;
-    padding-bottom: 45px;
-  }
-
-  .about-section {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .nwa-social-links {
-    gap: 9px;
-  }
-
-  .nwa-social-links a {
-    min-width: 0;
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 420px) {
-  .nwa-social-links a {
-    flex: 1 1 40%;
-  }
-}
 /* NWA CONTACT SECTION — LAYOUT FIX */
 
 .contact-section {
