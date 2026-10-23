@@ -1442,3 +1442,116 @@ button {
     font-size: 2.35rem;
   }
 }
+/* NWA About Us Section */
+.about-section {
+  padding: 70px 20px;
+  background: #f5f9f7;
+  color: #24332d;
+}
+
+.about-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-section .section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-section .section-tag {
+  display: inline-block;
+  color: #13804a;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.about-section h2 {
+  color: #075b37;
+  font-size: clamp(28px, 4vw, 40px);
+  margin-bottom: 15px;
+}
+
+.about-section .section-intro {
+  font-size: 19px;
+  font-weight: 600;
+  color: #a77a19;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.85;
+  font-size: 16px;
+}
+
+.about-content h3 {
+  color: #075b37;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 23px;
+}
+
+.about-content p {
+  margin-bottom: 18px;
+}
+
+.nwa-quote {
+  margin: 25px 0;
+  padding: 25px;
+  border-left: 5px solid #d6ad3d;
+  background: #e7f2eb;
+  color: #075b37;
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 800;
+  line-height: 1.5;
+  border-radius: 0 10px 10px 0;
+}
+
+.about-focus-list {
+  padding-left: 24px;
+}
+
+.about-focus-list li {
+  margin-bottom: 10px;
+}
+
+.about-callout {
+  margin: 30px 0;
+  padding: 20px;
+  background: #075b37;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.about-section .btn-primary {
+  display: inline-block;
+  padding: 13px 25px;
+  background: #075b37;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.about-section .btn-primary:hover {
+  background: #13804a;
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 45px 16px;
+  }
+
+  .about-content h3 {
+    font-size: 21px;
+  }
+
+  .nwa-quote {
+    padding: 18px;
+  }
+}
